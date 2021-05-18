@@ -141,9 +141,9 @@ ssl=yes					# use ssl-support.  Works with
 ##
 # protocol=namecheap,				\
 # server=dynamicdns.park-your-domain.com,	\
-# login=my-namecheap.com-login,			\
-# password=my-namecheap.com-password		\
-# fully.qualified.host
+# login=the-domain-name-that-you-own,		\
+# password=DYNAMIC-DNS-password			\
+# fully.qualified.host 					(e.g. @.yourdomain.com, www.yourdomain.com, test.yourdomain.com etc...)
 
 ##
 ## NearlyFreeSpeech.NET (nearlyfreespeech.net)
@@ -192,7 +192,7 @@ ssl=yes					# use ssl-support.  Works with
 #protocol=cloudflare,        \
 #zone=domain.tld,            \
 #ttl=1,                      \
-#login=your-login-email,     \ # Only needed if you are using your global API key. If you are using an API token, set it to "token" (wihtout double quotes).
+#login=your-login-email,     \ # Only needed if you are using your global API key.
 #password=APIKey             \ # This is either your global API key, or an API token. If you are using an API token, it must have the permissions "Zone - DNS - Edit" and "Zone - Zone - Read". The Zone resources must be "Include - All zones".
 #domain.tld,my.domain.tld
 
@@ -218,9 +218,8 @@ ssl=yes					# use ssl-support.  Works with
 ## Duckdns (http://www.duckdns.org/)
 ##
 #
-# protocol=duckdns, \
-# password=my-auto-generated-password \
-# hostwithoutduckdnsorg
+# password=my-auto-generated-password
+# protocol=duckdns hostwithoutduckdnsorg
 
 ##
 ## Freemyip (http://freemyip.com/)
@@ -302,10 +301,3 @@ ssl=yes					# use ssl-support.  Works with
 # login=myusername,     \
 # password=mypassword   \
 # myhost.mydomain.com
-
-## dnsexit (www.dnsexit.com)
-##
-#protocol=dnsexit,                                            \
-#login=myusername,                                            \
-#password=mypassword,                                         \
-#subdomain-1.domain.com,subdomain-2.domain.com
